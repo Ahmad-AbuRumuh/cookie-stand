@@ -18,8 +18,8 @@ let seattle = {
 
     totalCookies: function () {
         for (let i = 0; i < hours.length; i++) {
-            this.avgcookiesEachHour.push(this.avgcustPerHour[i] * this.avg);
-            this.total += this.avgcookiesEachHour[i];
+            this.avgCookiesEachHour.push(this.avgCustomerPerHour[i] * this.avg);
+            this.total += this.avgCookiesEachHour[i];
         }
     },
 
@@ -28,7 +28,7 @@ let seattle = {
         min = Math.ceil(this.min);
         max = Math.floor(this.max);
         for(let i = 0 ; i < hours.length; i++){
-        this.avgcookiesEachHour.push(Math.floor(Math.random() * (max - min + 1) + min)); }
+        this.avgCookiesEachHour.push(Math.floor(Math.random() * (max - min + 1) + min)); }
         },
 
     render: function (){
@@ -42,7 +42,7 @@ let seattle = {
         for (let j = 0; j < hours.length; j++) {
             let liEl = document.createElement('li');
             ulEl.appendChild(liEl)
-            liEl.textContent = `${hours[j]} : ${this.avgcookiesEachHour[j]}` ;
+            liEl.textContent = `${hours[j]} : ${this.avgCookiesEachHour[j]}` ;
         }
         let total = document.createElement('li');
         ulEl.appendChild(total);
@@ -53,6 +53,7 @@ let seattle = {
 seattle.getRandomInt(23,65);
 seattle.totalCookies();
 seattle.render();
+
 
 let Tokyo = {
 
@@ -67,8 +68,8 @@ let Tokyo = {
 
     totalCookies: function () {
         for (let i = 0; i < hours.length; i++) {
-            this.avgcookiesEachHour.push(this.avgcustPerHour[i] * this.avg);
-            this.total += this.avgcookiesEachHour[i];
+            this.avgCookiesEachHour.push(this.avgCustomerPerHour[i] * this.avg);
+            this.total += this.avgCookiesEachHour[i];
         }
     },
 
@@ -77,7 +78,7 @@ let Tokyo = {
         min = Math.ceil(this.min);
         max = Math.floor(this.max);
         for(let i = 0 ; i < hours.length; i++){
-        this.avgcookiesEachHour.push(Math.floor(Math.random() * (max - min + 1) + min)); }
+        this.avgCookiesEachHour.push(Math.floor(Math.random() * (max - min + 1) + min)); }
         },
 
     render: function (){
@@ -91,7 +92,7 @@ let Tokyo = {
         for (let j = 0; j < hours.length; j++) {
             let liEl = document.createElement('li');
             ulEl.appendChild(liEl)
-            liEl.textContent = `${hours[j]} : ${this.avgcookiesEachHour[j]}` ;
+            liEl.textContent = `${hours[j]} : ${this.avgCookiesEachHour[j]}` ;
         }
         let total = document.createElement('li');
         ulEl.appendChild(total);
@@ -116,8 +117,8 @@ let Dubai = {
 
     totalCookies: function () {
         for (let i = 0; i < hours.length; i++) {
-            this.avgcookiesEachHour.push(this.avgcustPerHour[i] * this.avg);
-            this.total += this.avgcookiesEachHour[i];
+            this.avgCookiesEachHour.push(this.avgCustomerPerHour[i] * this.avg);
+            this.total += this.avgCookiesEachHour[i];
         }
     },
 
@@ -126,7 +127,7 @@ let Dubai = {
         min = Math.ceil(this.min);
         max = Math.floor(this.max);
         for(let i = 0 ; i < hours.length; i++){
-        this.avgcookiesEachHour.push(Math.floor(Math.random() * (max - min + 1) + min)); }
+        this.avgCookiesEachHour.push(Math.floor(Math.random() * (max - min + 1) + min)); }
         },
 
     render: function (){
@@ -140,7 +141,7 @@ let Dubai = {
         for (let j = 0; j < hours.length; j++) {
             let liEl = document.createElement('li');
             ulEl.appendChild(liEl)
-            liEl.textContent = `${hours[j]} : ${this.avgcookiesEachHour[j]}` ;
+            liEl.textContent = `${hours[j]} : ${this.avgCookiesEachHour[j]}` ;
         }
         let total = document.createElement('li');
         ulEl.appendChild(total);
@@ -165,8 +166,8 @@ let Paris = {
 
     totalCookies: function () {
         for (let i = 0; i < hours.length; i++) {
-            this.avgcookiesEachHour.push(this.avgcustPerHour[i] * this.avg);
-            this.total += this.avgcookiesEachHour[i];
+            this.avgCookiesEachHour.push(this.avgCustomerPerHour[i] * this.avg);
+            this.total += this.avgCookiesEachHour[i];
         }
     },
 
@@ -175,7 +176,7 @@ let Paris = {
         min = Math.ceil(this.min);
         max = Math.floor(this.max);
         for(let i = 0 ; i < hours.length; i++){
-        this.avgcookiesEachHour.push(Math.floor(Math.random() * (max - min + 1) + min)); }
+        this.avgCookiesEachHour.push(Math.floor(Math.random() * (max - min + 1) + min)); }
         },
 
     render: function (){
@@ -189,7 +190,7 @@ let Paris = {
         for (let j = 0; j < hours.length; j++) {
             let liEl = document.createElement('li');
             ulEl.appendChild(liEl)
-            liEl.textContent = `${hours[j]} : ${this.avgcookiesEachHour[j]}` ;
+            liEl.textContent = `${hours[j]} : ${this.avgCookiesEachHour[j]}` ;
         }
         let total = document.createElement('li');
         ulEl.appendChild(total);
@@ -214,8 +215,8 @@ let Lima = {
 
     totalCookies: function () {
         for (let i = 0; i < hours.length; i++) {
-            this.avgcookiesEachHour.push(this.avgcustPerHour[i] * this.avg);
-            this.total += this.avgcookiesEachHour[i];
+            this.avgCookiesEachHour.push(this.avgCustomerPerHour[i] * this.avg);
+            this.total += this.avgCookiesEachHour[i];
         }
     },
 
@@ -224,7 +225,7 @@ let Lima = {
         min = Math.ceil(this.min);
         max = Math.floor(this.max);
         for(let i = 0 ; i < hours.length; i++){
-        this.avgcookiesEachHour.push(Math.floor(Math.random() * (max - min + 1) + min)); }
+        this.avgCookiesEachHour.push(Math.floor(Math.random() * (max - min + 1) + min)); }
         },
 
     render: function (){
@@ -238,7 +239,7 @@ let Lima = {
         for (let j = 0; j < hours.length; j++) {
             let liEl = document.createElement('li');
             ulEl.appendChild(liEl)
-            liEl.textContent = `${hours[j]} : ${this.avgcookiesEachHour[j]}` ;
+            liEl.textContent = `${hours[j]} : ${this.avgCookiesEachHour[j]}` ;
         }
         let total = document.createElement('li');
         ulEl.appendChild(total);
