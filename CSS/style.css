@@ -1,0 +1,103 @@
+/* index */
+header {
+    height: 100px;
+}
+
+header nav {
+    background-color: lightblue;
+    font-size: 30px;
+    padding: 20px 0 20px 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+#sales{
+    text-decoration: none;
+    border: black solid thin;
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    float: right;
+    padding: 15px;
+    margin-right: 30px;
+}
+
+#sales:hover{
+    transition: 100ms;
+    background-color: lightblue;
+}
+
+main {
+    height: 100;
+}
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7em;
+}
+
+main section{
+    background-color: lightblue;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  border: black thin solid;
+  border-radius: 50px;
+}
+
+.dropdown:hover {
+    transition: 100ms;
+    background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* sales */
+#home{
+    text-decoration: none;
+    border: black solid thin;
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    float: left;
+    padding: 15px;
+    margin-left: 30px;
+}
+
+#home:hover{
+    transition: 100ms;
+    background-color: lightblue;
+}
+
+table td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+table th{
+    padding: 5px;
+}
