@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales page</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/reset.css">
+    <!-- <link rel="stylesheet" href="CSS/reset.css"> -->
 </head>
 <body>
     <header>
@@ -17,6 +17,24 @@
         <a href="index.html" id="home">< Home</a>
     </header>
     <main>
+        <form action="" id="form">
+            <fieldset>
+                <legend>New branch info</legend>
+                <label for="name">Branch Name</label>
+                <input class="text" type="text" name="name" id="name">
+                <br><br>
+                <label for="min">Minimum customers</label>
+                <input class="text" type="number" name="min" id="min">
+                <br><br>
+                <label for="max">Maximim customers</label>
+                <input class="text" type="number" name="max" id="max">
+                <br><br>
+                <label for="avg">Average</label>
+                <input class="text" type="number" name="avg" id="avg">
+                <br><br>
+                <input id="submit" type="submit" value="Add this branch">
+            </fieldset>
+        </form>
         <div id="container"></div>
     </main>
     <footer>

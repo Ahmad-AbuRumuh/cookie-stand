@@ -92,39 +92,55 @@ function tableFooter() {
       let tdEl2 = document.createElement('td');
       trEl.appendChild(tdEl2);
       tdEl2.textContent = total;
-  
     }
     let tdEl3 = document.createElement('td');
     trEl.appendChild(tdEl3);
     tdEl3.textContent = `${totalOfTotal}`;
-  }
+}
 
 let seattle = new Location('Seattle', 23, 65, 6.3)
 seattle.getRandomInt(23, 65);
 seattle.totalCookies();
-seattle.render();
 
 let tokyo = new Location('Tokyo', 3, 24, 1.2)
 tokyo.getRandomInt(3, 24);
 tokyo.totalCookies();
-tokyo.render();
 
 let dubai = new Location('Dubai', 11, 38, 3.7)
 dubai.getRandomInt(11, 38);
 dubai.totalCookies();
-dubai.render();
 
 let paris = new Location('Paris', 20, 38, 2.3)
 paris.getRandomInt(20, 38);
 paris.totalCookies();
-paris.render();
 
 let lima = new Location('Lima', 2, 16, 4.6)
 lima.getRandomInt(2, 16);
 lima.totalCookies();
-lima.render();
 
+for (let i = 0; i < locations.length; i++) {
+    locations[i].render();
+}
 tableFooter();
+
+let form = document.getElementById('form');
+form.addEventListener('submit', addBranch);
+function addBranch(event) {
+    event.preventDefault();
+    let name = event.target.name.value;
+    let min = event.target.min.value;
+    let max = event.target.max.value;
+    let avg = event.target.avg.value;
+    
+    tableEl.deleteRow(-1);
+    let newBranch = new Location(name, min, max, avg);
+    newBranch.getRandomInt(min, max);
+    newBranch.totalCookies();
+    newBranch.render();
+    
+    tableFooter();
+    document.getElementById('form').reset();
+}
 
 
 // let seattle = {
